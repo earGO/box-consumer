@@ -9,7 +9,7 @@
     "cross-env": "5.0.5",
     "history": "^4.9.0",
     "oao": "^1.6.0",
-    "prettier": "^1.16.1",
+    "prettier": "^1.18.2",
     "prop-types": "^15.6.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
