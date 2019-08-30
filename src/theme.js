@@ -1,4 +1,4 @@
-import theme from '@design-system/theme'
+import theme from '@design-system/theme/build'
 
 export default {
 	...theme

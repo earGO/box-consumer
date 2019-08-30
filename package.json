@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@design-system/theme": "^1.3.0",
-    "@ursip-box-front/nsi": "^2.1.0",
+    "@design-system/atoms": "D:\\repos\\ds-chaos\\packages\\atoms",
+    "@design-system/molecules": "D:\\repos\\ds-chaos\\packages\\molecules",
+    "@design-system/cells": "D:\\repos\\ds-chaos\\packages\\cells",
+    "@design-system/theme": "D:\\repos\\ds-chaos\\packages\\theme",
+    "@design-system/utils": "D:\\repos\\ds-chaos\\packages\\utils",
     "connected-react-router": "^6.5.0",
     "cross-env": "5.0.5",
     "history": "^4.9.0",
@@ -31,7 +34,9 @@
     "redux-saga-requests-fetch": "^0.9.6",
     "redux-saga-requests-mock": "^0.1.6",
     "redux-thunk": "2.3.0",
-    "reselect": "4.0.0"
+    "reselect": "4.0.0",
+    "styled-components": "^4.3.2",
+    "styled-system": "^5.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -41,6 +46,7 @@
     "clean": "oao clean",
     "status": "oao status",
     "reinstall": "yarn clean && yarn",
+    "hard-reinstall": "rm -rf yarn.lock && yarn clean && yarn",
     "remove-all": "oao remove-all"
   },
   "browserslist": {
