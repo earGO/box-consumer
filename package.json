@@ -3,11 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@design-system/atoms": "D:\\repos\\ds-chaos\\packages\\atoms",
-    "@design-system/molecules": "D:\\repos\\ds-chaos\\packages\\molecules",
-    "@design-system/cells": "D:\\repos\\ds-chaos\\packages\\cells",
-    "@design-system/theme": "D:\\repos\\ds-chaos\\packages\\theme",
-    "@design-system/utils": "D:\\repos\\ds-chaos\\packages\\utils",
+    "@design-system/atoms": "^2.2.0",
+    "@design-system/cells": "^2.2.0",
+    "@design-system/molecules": "^2.2.0",
+    "@design-system/theme": "^2.2.0",
+    "@design-system/utils": "^2.2.0",
+    "@ursip-box-front/nsi-module": "^1.0.0",
     "connected-react-router": "^6.5.0",
     "cross-env": "5.0.5",
     "history": "^4.9.0",
@@ -46,7 +47,7 @@
     "clean": "oao clean",
     "status": "oao status",
     "reinstall": "yarn clean && yarn",
-    "hard-reinstall": "rm -rf yarn.lock && yarn clean && yarn",
+    "reinstall-hard": "rm -rf yarn.lock && yarn clean && yarn",
     "remove-all": "oao remove-all"
   },
   "browserslist": {

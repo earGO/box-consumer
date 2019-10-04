@@ -12,6 +12,7 @@ import {Text, Box, FlexContainerBottomDivider} from '@design-system/atoms'
 import {Hint, DropdownMenu, AnimatedSearchInput} from '@design-system/molecules'
 import {SingleDatePicker} from '@design-system/cells'
 import {formatDate} from '@design-system/utils'
+import DynamicRoutes from './DynamicRoutes'
 
 const RenderedDatePicker = ({props}) => {
   const [date, setDate] = useState([])
@@ -31,7 +32,8 @@ render(
   <Provider store={store}>
     <ThemeProvider theme={theme}>
       <Normalize />
-      <Box bg={'primary'} width={1 / 2} color={'warning'}>
+      <DynamicRoutes />
+      {/*<Box bg={'primary'} width={1 / 2} color={'warning'}>
         <Text fontSize={6}>Test render</Text>
       </Box>
       <Box>
@@ -42,7 +44,7 @@ render(
       </Box>
       <Box>
         <RenderedDatePicker />
-      </Box>
+      </Box>*/}
     </ThemeProvider>
   </Provider>,
   document.getElementById('root')

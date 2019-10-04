@@ -4,12 +4,14 @@ import {ConnectedRouter} from 'connected-react-router'
 import {Route, Switch} from 'react-router-dom'
 import {name as appName} from '../package.json'
 import {Layout} from './Layout'
+import Nsi from './LazyLoad/Nsi'
 
 const routes = [
   {
     key: 'backendMain',
-    path: '/'
-    // ReactNode: React.lazy(() => import('./LazyLoad/Nsi'))
+    path: '/',
+    exact: true,
+    component: Nsi
   }
 ]
 
